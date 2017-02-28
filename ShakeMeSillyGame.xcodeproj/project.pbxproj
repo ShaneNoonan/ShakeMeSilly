@@ -13,6 +13,7 @@
 		E4E263741E50BF1B00A9825A /* ShakeMeSillyGame.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E4E263721E50BF1B00A9825A /* ShakeMeSillyGame.xcdatamodeld */; };
 		E4E263761E50BF1B00A9825A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4E263751E50BF1B00A9825A /* Assets.xcassets */; };
 		E4E263791E50BF1B00A9825A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4E263771E50BF1B00A9825A /* LaunchScreen.storyboard */; };
+		E4E263811E50BF8600A9825A /* edosz.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E4E263801E50BF8600A9825A /* edosz.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		E4E263751E50BF1B00A9825A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E4E263781E50BF1B00A9825A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E4E2637A1E50BF1B00A9825A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E4E263801E50BF8600A9825A /* edosz.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = edosz.ttf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				E4E2636B1E50BF1B00A9825A /* AppDelegate.swift */,
 				E4E2636D1E50BF1B00A9825A /* ViewController.swift */,
 				E4E2636F1E50BF1B00A9825A /* Main.storyboard */,
+				E4E263801E50BF8600A9825A /* edosz.ttf */,
 				E4E263751E50BF1B00A9825A /* Assets.xcassets */,
 				E4E263771E50BF1B00A9825A /* LaunchScreen.storyboard */,
 				E4E2637A1E50BF1B00A9825A /* Info.plist */,
@@ -129,6 +132,7 @@
 			files = (
 				E4E263791E50BF1B00A9825A /* LaunchScreen.storyboard in Resources */,
 				E4E263761E50BF1B00A9825A /* Assets.xcassets in Resources */,
+				E4E263811E50BF8600A9825A /* edosz.ttf in Resources */,
 				E4E263711E50BF1B00A9825A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

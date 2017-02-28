@@ -1,14 +1,24 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="edosz.ttf">
+            <string>EdoSZ</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ShakeMeSillyGame" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,11 +26,93 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="beach" translatesAutoresizingMaskIntoConstraints="NO" id="dWS-8j-T7x">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Shake Me Silly" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MKP-rO-sEb">
+                                <rect key="frame" x="10" y="10" width="343" height="121"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="121" id="R1W-kr-Wtf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="EdoSZ" family="Edo SZ" pointSize="54"/>
+                                <color key="textColor" red="0.97582286600000001" green="0.99614530800000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FuC-jo-Hnh">
+                                <rect key="frame" x="10" y="139" width="343" height="77"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="77" id="Du5-9Z-2N6"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="EdoSZ" family="Edo SZ" pointSize="55"/>
+                                <color key="textColor" red="0.88813406229019165" green="0.19432374835014343" blue="0.19900497794151306" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LV0-A1-sBU">
+                                <rect key="frame" x="16" y="589" width="343" height="58"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="58" id="Yvs-TC-8uw"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="EdoSZ" family="Edo SZ" pointSize="31"/>
+                                <state key="normal" title="Start Game">
+                                    <color key="titleColor" red="0.0029462848324328661" green="0.62971228361129761" blue="0.92482167482376099" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="startGame:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6kw-4M-tZB"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Maracas1" translatesAutoresizingMaskIntoConstraints="NO" id="lM4-JE-Oyu">
+                                <rect key="frame" x="16" y="224" width="343" height="289"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xP2-Kv-aqs">
+                                <rect key="frame" x="16" y="504" width="343" height="77"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="77" id="RSb-3a-tFJ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="EdoSZ" family="Edo SZ" pointSize="55"/>
+                                <color key="textColor" red="0.0" green="0.29336446523666382" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="LV0-A1-sBU" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="0xk-HW-asz"/>
+                            <constraint firstItem="FuC-jo-Hnh" firstAttribute="top" secondItem="MKP-rO-sEb" secondAttribute="bottom" constant="8" id="1Gi-yV-pxP"/>
+                            <constraint firstItem="xP2-Kv-aqs" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="5fo-L6-nEM"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="FuC-jo-Hnh" secondAttribute="trailing" constant="6" id="8NG-Gc-UBG"/>
+                            <constraint firstItem="xP2-Kv-aqs" firstAttribute="top" secondItem="FuC-jo-Hnh" secondAttribute="bottom" constant="288" id="92S-Mr-sGv"/>
+                            <constraint firstItem="xP2-Kv-aqs" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="GGz-oW-DIp"/>
+                            <constraint firstItem="MKP-rO-sEb" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="10" id="Hjm-9B-ol6"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="LV0-A1-sBU" secondAttribute="bottom" constant="20" id="IMT-nD-B1Q"/>
+                            <constraint firstItem="MKP-rO-sEb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-6" id="LUD-pp-nWU"/>
+                            <constraint firstItem="dWS-8j-T7x" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="UDj-QI-VaI"/>
+                            <constraint firstItem="dWS-8j-T7x" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Whe-wl-fPZ"/>
+                            <constraint firstItem="lM4-JE-Oyu" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="bib-qa-25P"/>
+                            <constraint firstItem="LV0-A1-sBU" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="cKW-hd-nZB"/>
+                            <constraint firstItem="lM4-JE-Oyu" firstAttribute="top" secondItem="FuC-jo-Hnh" secondAttribute="bottom" constant="8" id="dKT-3c-E3w"/>
+                            <constraint firstItem="LV0-A1-sBU" firstAttribute="top" secondItem="xP2-Kv-aqs" secondAttribute="bottom" constant="8" id="geX-Sr-bUT"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="dWS-8j-T7x" secondAttribute="bottom" id="hTK-e1-7gT"/>
+                            <constraint firstItem="lM4-JE-Oyu" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="rGB-my-4iW"/>
+                            <constraint firstAttribute="trailing" secondItem="dWS-8j-T7x" secondAttribute="trailing" id="v1B-CB-ghn"/>
+                            <constraint firstItem="FuC-jo-Hnh" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-6" id="vAc-9g-X70"/>
+                            <constraint firstItem="LV0-A1-sBU" firstAttribute="top" secondItem="lM4-JE-Oyu" secondAttribute="bottom" constant="76" id="vRT-RN-OJy"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="MKP-rO-sEb" secondAttribute="trailing" constant="6" id="zyA-mx-GOO"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="imageView" destination="lM4-JE-Oyu" id="FXv-ML-48w"/>
+                        <outlet property="scoreLabel" destination="xP2-Kv-aqs" id="Mqr-Vj-kKJ"/>
+                        <outlet property="startButton" destination="LV0-A1-sBU" id="rUY-93-FIY"/>
+                        <outlet property="timerLabel" destination="FuC-jo-Hnh" id="DwA-xF-3Uy"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-79.200000000000003" y="137.18140929535232"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Maracas1" width="551" height="743"/>
+        <image name="beach" width="1920" height="1080"/>
+    </resources>
 </document>
